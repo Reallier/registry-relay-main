@@ -1,0 +1,36 @@
+name = "registry-relay"
+main = "src/index.ts"
+compatibility_date = "2024-06-10"
+compatibility_flags = ["nodejs_compat"]
+routes = [
+	{ pattern = "dhcr.example-access.com", custom_domain = true },
+	# { pattern = "adhcr.example-access.com", custom_domain = true },
+	{ pattern = "k8s.example-access.com", custom_domain = true },
+	{ pattern = "quay.example-access.com", custom_domain = true },
+	{ pattern = "gcr.example-access.com", custom_domain = true },
+	{ pattern = "ghcr.example-access.com", custom_domain = true },
+	{ pattern = "elastic.example-access.com", custom_domain = true },
+	{ pattern = "crunchydata.example-access.com", custom_domain = true },
+	{ pattern = "nvcr.example-access.com", custom_domain = true },
+	{ pattern = "lscr.example-access.com", custom_domain = true },
+	{ pattern = "mcr.example-access.com", custom_domain = true },
+	{ pattern = "gitlab.example-access.com", custom_domain = true },
+]
+
+[vars]
+DOCKERHUB_ACCESS_DOMAIN = "dhcr.example-access.com"
+# DOCKERHUB_AUTH_ACCESS_DOMAIN = "adhcr.example-access.com"
+K8S_ACCESS_DOMAIN = "k8s.example-access.com"
+QUAY_ACCESS_DOMAIN = "quay.example-access.com"
+GCR_ACCESS_DOMAIN = "gcr.example-access.com"
+GHCR_ACCESS_DOMAIN = "ghcr.example-access.com"
+ELASTIC_ACCESS_DOMAIN = "elastic.example-access.com"
+CRUNCHYDATA_ACCESS_DOMAIN = "crunchydata.example-access.com"
+# NVIDIA
+NVCR_ACCESS_DOMAIN = "nvcr.example-access.com"
+# LinuxServer.io
+LSCR_ACCESS_DOMAIN = "lscr.example-access.com"
+# 微软
+MCR_ACCESS_DOMAIN = "mcr.example-access.com"
+# GitLab
+GITLAB_ACCESS_DOMAIN = "gitlab.example-access.com"
